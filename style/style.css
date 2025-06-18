@@ -19,6 +19,115 @@
 
     }
 
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  padding: 1rem;
+  min-width: 200px;
+  top: 100%;
+  left: 0;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.dropdown-wrapper:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  padding: 0.5rem 0;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background: #444;
+}
+.dropdown-wrapper {
+  position: relative;
+}
+
+.dropdown-menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%); 
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 999;
+  min-width: 600px;
+  max-width: 90vw;
+}
+
+
+.dropdown-wrapper:hover .dropdown-menu-container {
+  display: block;
+}
+
+.dropdown-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+}
+
+.dropdown-item {
+  background: #111;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 160px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-item:hover {
+  transform: scale(1.05);
+}
+
+.dropdown-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.dropdown-item p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0.5rem 0;
+}
+
+.dropdown-item strong {
+  color: #25D366;
+  font-size: 1.1rem;
+}
+.dropdown-btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #25D366;
+  color: #000;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  background-color: #1ebd59;
+}
+
+
 
     .Nav-Links {
     display: flex;
@@ -68,6 +177,30 @@
       z-index: -1;
       opacity: 0.4;
     }
+
+    .see-more-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #25D366;
+  color: #000;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Button hover */
+.see-more-btn:hover {
+  background-color: #1ebd59;
+}
+
+.dropdown-menu-container {
+  text-align: center;
+}
+
 
     .hero-content {
       position: relative;
