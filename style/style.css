@@ -200,7 +200,9 @@
 .dropdown-menu-container {
   text-align: center;
 }
-
+.bg-dark{
+  background-color: #141414;
+}
 
     .hero-content {
       position: relative;
@@ -265,4 +267,77 @@
 
     .top-contact-bar a:hover {
       text-decoration: underline;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .product-container {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+    }
+
+    .product-image {
+      flex: 1 1 300px;
+    }
+
+    .product-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-details {
+      flex: 2 1 400px;
+    }
+
+    .product-details h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-details p {
+      color: #ccc;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-price {
+      font-size: 1.5rem;
+      color: #25D366;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .buy-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #25D366;
+      color: #000;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-button:hover {
+      background-color: #1ebd59;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 4rem;
     }
