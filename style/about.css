@@ -1,0 +1,70 @@
+  body {
+    background-color: #121212;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Hero container full width */
+  .hero-container {
+    width: 100%;
+    padding: 4rem 3rem 2rem 3rem;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-sizing: border-box;
+  }
+
+  .hero-text {
+    flex: 1 1 50%;
+    color: #25D366;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+
+  .hero-image {
+    flex: 1 1 50%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* About text container full width */
+  .about-text-container {
+    width: 100%;
+    padding: 2rem 3rem 4rem 3rem;
+    background-color: #1a1a1a;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Drop cap only on first letter of first paragraph */
+  .about-text-container p:first-of-type::first-letter {
+    float: left;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1;
+    padding-right: 0.15em;
+    padding-left: 0.05em;
+    color: #25D366;
+    font-family: 'Georgia', serif;
+  }
+
+  .about-text-container p {
+    margin-bottom: 1.2rem;
+  }
+
+  .highlight {
+    font-weight: 700;
+    color: #25D366;
+    margin-top: 2rem;
+  }
