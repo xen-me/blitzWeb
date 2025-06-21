@@ -391,6 +391,12 @@
       text-align: center;
       transition: transform 0.3s ease;
     }
+.dropdown-menu-container {
+  display: none;
+}
+.dropdown-menu-container.visible {
+  display: block;
+}
 
     .item-card:hover {
       transform: translateY(-5px);
